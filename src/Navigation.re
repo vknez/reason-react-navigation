@@ -43,6 +43,10 @@ external addListener:
 [@bs.send] external pop: t => unit = "pop";
 [@bs.send] external popN: (t, int) => unit = "pop";
 [@bs.send] external popToTop: t => unit = "popToTop";
+[@bs.send] external replace: (t, string) => unit = "replace";
+[@bs.send]
+external replaceWithParams: (t, string, Js.t({..})) => unit = "replace";
+
 // Drawer navigator only
 [@bs.send] external openDrawer: t => unit = "openDrawer";
 [@bs.send] external closeDrawer: t => unit = "closeDrawer";
