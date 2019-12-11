@@ -16,6 +16,7 @@ external config:
     ~cardShadowEnabled: bool=?,
     ~cardOverlayEnabled: bool=?,
     ~defaultNavigationOptions: NavigationOptions.t=?,
+    ~initialRouteName: string=?,
     // TODO: many more props
     unit
   ) =>
